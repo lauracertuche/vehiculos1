@@ -54,6 +54,14 @@
               <Component id="botonGuardar" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="1" max="-2" attributes="0">
+                  <Component id="texto2" pref="203" max="32767" attributes="0"/>
+                  <Component id="texto1" max="32767" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="188" max="-2" attributes="0"/>
+          </Group>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -81,7 +89,11 @@
               </Group>
               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
               <Component id="botonGuardar" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="225" max="32767" attributes="0"/>
+              <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+              <Component id="texto1" min="-2" max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="texto2" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="144" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -98,9 +110,6 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="TextoMarca">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="dfgsdfgdf"/>
-      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="TextoMarcaActionPerformed"/>
       </Events>
@@ -134,6 +143,10 @@
       <Events>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="botonGuardarMouseClicked"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JTextField" name="texto1">
+    </Component>
+    <Component class="javax.swing.JTextField" name="texto2">
     </Component>
   </SubComponents>
 </Form>

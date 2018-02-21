@@ -36,6 +36,8 @@ public class fichavehiuclo extends javax.swing.JFrame {
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         botonGuardar = new javax.swing.JButton();
+        texto1 = new javax.swing.JTextField();
+        texto2 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -51,7 +53,6 @@ public class fichavehiuclo extends javax.swing.JFrame {
             }
         });
 
-        TextoMarca.setText("dfgsdfgdf");
         TextoMarca.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TextoMarcaActionPerformed(evt);
@@ -101,6 +102,12 @@ public class fichavehiuclo extends javax.swing.JFrame {
                 .addGap(292, 292, 292)
                 .addComponent(botonGuardar)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(texto2, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
+                    .addComponent(texto1))
+                .addGap(188, 188, 188))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -123,7 +130,11 @@ public class fichavehiuclo extends javax.swing.JFrame {
                     .addComponent(jLabel4))
                 .addGap(40, 40, 40)
                 .addComponent(botonGuardar)
-                .addContainerGap(225, Short.MAX_VALUE))
+                .addGap(30, 30, 30)
+                .addComponent(texto1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(texto2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(144, Short.MAX_VALUE))
         );
 
         pack();
@@ -143,8 +154,10 @@ public class fichavehiuclo extends javax.swing.JFrame {
 
     private void botonGuardarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_botonGuardarMouseClicked
         String a=TextoMarca.getText();
+        String b= TextoCilindraje.getText();
         
-        TextoCilindraje.setText(a);
+        texto1.setText(a);
+        texto2.setText(b);
     }//GEN-LAST:event_botonGuardarMouseClicked
 
     /**
@@ -192,5 +205,7 @@ public class fichavehiuclo extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JTextField texto1;
+    private javax.swing.JTextField texto2;
     // End of variables declaration//GEN-END:variables
 }
