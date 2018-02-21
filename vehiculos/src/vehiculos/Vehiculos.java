@@ -22,6 +22,14 @@ public class Vehiculos {
     
 }
     public static void main(String[] args) {
+        
+        fichavehiuclo miFicha;
+        miFicha=new fichavehiuclo();
+        
+        miFicha.setVisible(true);
+        
+        Moto miMoto=new Moto();
+        miFicha.miMotoEnFichaVehiculo=miMoto;
         // TODO code application logic here
     }
 }
